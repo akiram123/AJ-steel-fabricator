@@ -5,374 +5,525 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#101010">
 
-<title>AJ Steel & Metal Fabricators | Katwe Kampala</title>
-
-<meta name="description" content="AJ Steel & Metal Fabricators in Katwe, Kampala. Gates, beds, shoe racks, fences, windows, pergolas, canopies, roller shutters, welding and custom metal fabrication.">
+<title>AJ Steel & Metal Fabricators | Kampala Uganda</title>
+<meta name="description" content="AJ Steel & Metal Fabricators, Katwe Kampala. Modern steel gates, metal beds, shoe racks, staircases, pergolas, canopies, fences, furniture and custom fabrication.">
 
 <style>
-:root{
+:root {
   --black:#101010;
   --dark:#181818;
+  --card:#222;
   --gold:#d6a83d;
-  --white:#ffffff;
-  --grey:#bdbdbd;
+  --silver:#c5c5c5;
+  --white:#fff;
+  --muted:#aaa;
 }
 
-*{
+* {
   margin:0;
   padding:0;
   box-sizing:border-box;
   scroll-behavior:smooth;
 }
 
-body{
+body {
   font-family:Arial,Helvetica,sans-serif;
-  background:#111;
-  color:white;
+  background:var(--black);
+  color:var(--white);
   line-height:1.6;
 }
 
-a{
-  text-decoration:none;
+a {
   color:inherit;
+  text-decoration:none;
 }
 
-img{
+img {
   width:100%;
   display:block;
-  object-fit:cover;
 }
 
-.container{
+.container {
   width:90%;
-  max-width:1200px;
+  max-width:1250px;
   margin:auto;
 }
 
-header{
-  background:#101010;
+header {
   position:sticky;
   top:0;
   z-index:1000;
-  border-bottom:1px solid #333;
+  background:rgba(12,12,12,.97);
+  border-bottom:1px solid #383838;
 }
 
-.nav{
+.nav {
   min-height:75px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:15px;
 }
 
-.logo{
-  font-size:21px;
+.logo {
+  font-size:23px;
   font-weight:900;
   color:var(--gold);
+  letter-spacing:1px;
 }
 
-.logo span{
+.logo span {
   color:white;
 }
 
-nav{
+nav {
   display:flex;
-  align-items:center;
-  gap:20px;
+  gap:24px;
 }
 
-nav a{
+nav a {
   font-size:14px;
   color:#eee;
+  transition:.3s;
 }
 
-nav a:hover{
+nav a:hover {
   color:var(--gold);
 }
 
-.menu-btn{
+.menu-btn {
   display:none;
   background:none;
-  border:none;
   color:white;
+  border:0;
   font-size:28px;
 }
 
-.hero{
-  min-height:570px;
+.hero {
+  min-height:590px;
   display:flex;
   align-items:center;
   background:
-  linear-gradient(90deg,rgba(0,0,0,.93),rgba(0,0,0,.58)),
-  url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85")
-  center/cover;
+    linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.48)),
+    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
 }
 
-.hero-content{
-  max-width:700px;
+.hero-content {
+  max-width:760px;
   padding:90px 0;
 }
 
-.label{
+.label {
   color:var(--gold);
+  font-size:12px;
   font-weight:bold;
   text-transform:uppercase;
   letter-spacing:3px;
-  font-size:13px;
 }
 
-.hero h1{
-  font-size:clamp(38px,7vw,68px);
-  line-height:1.1;
+.hero h1 {
+  font-size:clamp(40px,7vw,72px);
+  line-height:1.08;
   margin:20px 0;
 }
 
-.hero h1 span{
+.hero h1 span {
   color:var(--gold);
 }
 
-.hero p{
+.hero p {
+  max-width:650px;
   color:#ddd;
   font-size:17px;
-  max-width:600px;
-  margin-bottom:30px;
+  margin-bottom:28px;
 }
 
-.btn{
+.btn {
   display:inline-block;
   padding:14px 23px;
   border-radius:4px;
   font-weight:bold;
   margin:5px 5px 5px 0;
+  transition:.3s;
 }
 
-.btn-gold{
+.btn-gold {
   background:var(--gold);
   color:#111;
 }
 
-.btn-outline{
-  border:1px solid white;
+.btn-outline {
+  border:1px solid #ddd;
   color:white;
 }
 
-.btn:hover{
-  opacity:.85;
+.btn:hover {
+  transform:translateY(-2px);
+  opacity:.9;
 }
 
-.section{
+.highlights {
+  background:#171717;
+  border-top:1px solid #333;
+  border-bottom:1px solid #333;
+}
+
+.highlight-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  padding:25px 0;
+  text-align:center;
+}
+
+.highlight strong {
+  display:block;
+  color:var(--gold);
+  font-size:20px;
+}
+
+.highlight span {
+  color:#aaa;
+  font-size:13px;
+}
+
+.section {
   padding:75px 0;
 }
 
-.section-heading{
+.section-heading {
   text-align:center;
   margin-bottom:40px;
 }
 
-.section-heading h2{
-  font-size:clamp(27px,4vw,39px);
-  margin-bottom:10px;
+.section-heading h2 {
+  font-size:clamp(28px,4vw,42px);
+  margin:10px 0;
 }
 
-.section-heading h2 span{
+.section-heading h2 span {
   color:var(--gold);
 }
 
-.section-heading p{
-  color:#aaa;
+.section-heading p {
+  color:var(--muted);
 }
 
-.about-grid{
+.about-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:35px;
+  gap:40px;
   align-items:center;
 }
 
-.about-image img{
-  height:380px;
+.about-image img {
+  height:390px;
+  object-fit:cover;
   border-radius:8px;
+  border:1px solid #444;
 }
 
-.about-text h2{
+.about-text h2 {
   font-size:32px;
-  margin-bottom:15px;
+  margin:12px 0;
 }
 
-.about-text h2 span{
+.about-text h2 span {
   color:var(--gold);
 }
 
-.about-text p{
+.about-text p {
   color:#bbb;
   margin-bottom:15px;
 }
 
-.features{
+.features {
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:12px;
   margin-top:20px;
 }
 
-.feature{
-  background:#202020;
+.feature {
+  background:#222;
   padding:13px;
   border-left:3px solid var(--gold);
   font-weight:bold;
+  font-size:14px;
 }
 
-.products{
+/* CATALOGUE */
+
+.products {
   background:#171717;
 }
 
-.category-title{
+.catalogue-tools {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-bottom:30px;
+}
+
+.catalogue-tools input {
+  width:min(100%,350px);
+  padding:13px;
+  background:#101010;
+  border:1px solid #555;
+  color:white;
+  border-radius:4px;
+  font-size:15px;
+}
+
+.filters {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin-bottom:35px;
+}
+
+.filter-btn {
+  border:1px solid #555;
+  background:#222;
+  color:white;
+  padding:10px 15px;
+  border-radius:30px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#111;
+}
+
+.category-title {
+  color:var(--gold);
   font-size:23px;
   margin:35px 0 18px;
-  color:var(--gold);
-  border-bottom:1px solid #393939;
+  border-bottom:1px solid #444;
   padding-bottom:10px;
 }
 
-.product-grid{
+.product-grid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
 
-.product-card{
+.product-card {
   background:#222;
+  border:1px solid #383838;
   border-radius:7px;
   overflow:hidden;
   transition:.3s;
-  border:1px solid #333;
 }
 
-.product-card:hover{
+.product-card:hover {
   transform:translateY(-5px);
   border-color:var(--gold);
+  box-shadow:0 8px 25px #0007;
 }
 
-.product-card img{
-  height:210px;
+.product-image {
+  height:230px;
+  background:#292929;
+  position:relative;
+  overflow:hidden;
 }
 
-.product-info{
+.product-image img {
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.product-card:hover .product-image img {
+  transform:scale(1.04);
+}
+
+.image-fallback {
+  display:none;
+  height:100%;
+  place-items:center;
+  text-align:center;
+  padding:20px;
+  color:var(--gold);
+  font-weight:bold;
+  background:linear-gradient(135deg,#222,#111);
+}
+
+.product-info {
   padding:17px;
 }
 
-.product-info h3{
-  color:white;
-  margin-bottom:7px;
+.product-info h3 {
   font-size:18px;
+  margin-bottom:7px;
 }
 
-.product-info p{
+.product-info p {
   color:#aaa;
-  font-size:14px;
-  margin-bottom:13px;
+  font-size:13px;
+  min-height:42px;
 }
 
-.product-info a{
+.product-info a {
+  display:inline-block;
   color:var(--gold);
   font-weight:bold;
   font-size:14px;
+  margin-top:13px;
 }
 
-.gallery{
+.product-info a:hover {
+  color:white;
+}
+
+/* EXTRA PRODUCTS */
+
+.extra-products {
+  background:#101010;
+  padding:28px;
+  border:1px solid #383838;
+  border-radius:8px;
+  margin-top:45px;
+}
+
+.extra-products h3 {
+  color:var(--gold);
+  margin-bottom:15px;
+}
+
+.extra-list {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.extra-list span {
+  background:#252525;
+  border:1px solid #444;
+  border-radius:4px;
+  padding:9px 13px;
+  font-size:13px;
+  color:#ddd;
+}
+
+/* GALLERY */
+
+.gallery-section {
+  background:#111;
+}
+
+.gallery {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:15px;
 }
 
-.gallery img{
-  height:230px;
+.gallery-item {
+  height:240px;
+  overflow:hidden;
   border-radius:6px;
-  transition:.3s;
+  border:1px solid #444;
 }
 
-.gallery img:hover{
-  transform:scale(1.02);
+.gallery-item img {
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
 }
 
-.note{
-  text-align:center;
+.gallery-item:hover img {
+  transform:scale(1.07);
+}
+
+.note {
   color:#999;
   font-size:12px;
-  margin-top:18px;
+  text-align:center;
+  margin-top:20px;
 }
 
-.why{
+/* WHY US */
+
+.why {
   background:#1a1a1a;
 }
 
-.why-grid{
+.why-grid {
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:18px;
 }
 
-.why-card{
+.why-card {
   background:#242424;
-  text-align:center;
   padding:25px 15px;
+  text-align:center;
   border-radius:6px;
+  border-bottom:3px solid var(--gold);
 }
 
-.why-card .icon{
+.why-card .icon {
   font-size:35px;
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 
-.why-card h3{
+.why-card h3 {
   color:var(--gold);
   margin-bottom:8px;
 }
 
-.why-card p{
+.why-card p {
   color:#aaa;
-  font-size:14px;
+  font-size:13px;
 }
 
-.contact{
-  background:#111;
-}
+/* CONTACT */
 
-.contact-grid{
+.contact-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:35px;
 }
 
-.contact-info h3{
-  font-size:25px;
+.contact-info h3 {
+  font-size:26px;
   margin-bottom:20px;
 }
 
-.contact-item{
-  margin-bottom:20px;
-  padding:15px;
-  background:#202020;
+.contact-item {
+  padding:16px;
+  background:#222;
+  margin-bottom:15px;
   border-left:3px solid var(--gold);
 }
 
-.contact-item strong{
+.contact-item strong {
   color:var(--gold);
   display:block;
   margin-bottom:5px;
 }
 
-form{
-  background:#202020;
+form {
+  background:#222;
   padding:25px;
   border-radius:7px;
 }
 
-form h3{
+form h3 {
   margin-bottom:18px;
 }
 
-input,textarea,select{
+input,
+select,
+textarea {
   width:100%;
   padding:14px;
   margin-bottom:13px;
@@ -383,121 +534,135 @@ input,textarea,select{
   font-size:15px;
 }
 
-textarea{
-  height:120px;
+textarea {
+  height:125px;
   resize:vertical;
 }
 
-form button{
+form button {
   width:100%;
-  border:none;
+  border:0;
   cursor:pointer;
-  font-size:16px;
+  font-size:15px;
 }
 
-footer{
+footer {
   background:#080808;
+  padding:35px 15px;
   text-align:center;
-  padding:30px 15px;
   border-top:1px solid #333;
 }
 
-footer h3{
+footer h3 {
   color:var(--gold);
   margin-bottom:8px;
 }
 
-footer p{
+footer p {
   color:#999;
   font-size:13px;
   margin:5px;
 }
 
-.whatsapp-float{
+.whatsapp-float {
   position:fixed;
-  bottom:20px;
   right:18px;
+  bottom:20px;
   z-index:100;
   background:#25d366;
   color:white;
   padding:14px 18px;
-  border-radius:50px;
+  border-radius:40px;
   font-weight:bold;
   box-shadow:0 3px 15px #0008;
 }
 
-@media(max-width:800px){
-  .menu-btn{
+@media(max-width:850px) {
+  .menu-btn {
     display:block;
   }
 
-  nav{
+  nav {
     display:none;
     position:absolute;
     top:75px;
     left:0;
     width:100%;
-    background:#111;
     padding:20px;
+    background:#111;
     flex-direction:column;
-    align-items:flex-start;
-    border-bottom:1px solid #444;
+    gap:18px;
   }
 
-  nav.active{
+  nav.active {
     display:flex;
   }
 
   .about-grid,
-  .contact-grid{
+  .contact-grid {
     grid-template-columns:1fr;
   }
 
-  .product-grid{
+  .product-grid {
     grid-template-columns:repeat(2,1fr);
   }
 
-  .gallery{
+  .why-grid {
     grid-template-columns:repeat(2,1fr);
   }
 
-  .why-grid{
+  .highlight-grid {
     grid-template-columns:repeat(2,1fr);
   }
 }
 
-@media(max-width:480px){
-  .product-grid{
-    grid-template-columns:1fr 1fr;
+@media(max-width:500px) {
+  .section {
+    padding:55px 0;
+  }
+
+  .product-grid {
     gap:10px;
   }
 
-  .product-card img{
-    height:145px;
+  .product-image {
+    height:155px;
   }
 
-  .product-info{
+  .product-info {
     padding:12px;
   }
 
-  .product-info h3{
+  .product-info h3 {
     font-size:15px;
   }
 
-  .product-info p{
+  .product-info p {
     font-size:12px;
   }
 
-  .gallery img{
-    height:150px;
+  .product-info a {
+    font-size:12px;
   }
 
-  .hero{
+  .gallery {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery-item {
+    height:155px;
+  }
+
+  .features {
+    grid-template-columns:1fr;
+  }
+
+  .hero {
     min-height:500px;
   }
 
-  .features{
-    grid-template-columns:1fr;
+  .extra-products {
+    padding:18px;
   }
 }
 </style>
@@ -508,7 +673,7 @@ footer p{
 <header>
 <div class="container nav">
 
-<a href="#" class="logo">AJ <span>STEEL</span></a>
+<a href="#home" class="logo">AJ <span>STEEL</span></a>
 
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
@@ -523,307 +688,625 @@ footer p{
 </div>
 </header>
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 <div class="container">
 <div class="hero-content">
 
 <div class="label">Strength • Quality • Creativity</div>
 
-<h1>Quality Metal Work.<br><span>Built to Last.</span></h1>
+<h1>Modern Metal Work.<br><span>Made to Last.</span></h1>
 
 <p>
-From beautiful gates and strong security fences to modern beds,
-shoe racks and custom metal furniture, we turn your ideas into reality.
+From modern steel gates and security fences to stylish metal beds,
+shoe racks, staircases, pergolas and custom furniture.
+We turn your fabrication ideas into reality.
 </p>
 
-<a class="btn btn-gold" href="#products">Explore Our Products</a>
+<a href="#products" class="btn btn-gold">Explore Our Catalogue</a>
 
-<a class="btn btn-outline" href="https://wa.me/256705434720">WhatsApp Us</a>
+<a href="https://wa.me/256705434720" class="btn btn-outline">
+WhatsApp Us
+</a>
 
 </div>
 </div>
 </section>
+
+<!-- HIGHLIGHTS -->
+
+<section class="highlights">
+<div class="container highlight-grid">
+
+<div class="highlight">
+<strong>Modern</strong>
+<span>Contemporary designs</span>
+</div>
+
+<div class="highlight">
+<strong>Custom</strong>
+<span>Made to your measurements</span>
+</div>
+
+<div class="highlight">
+<strong>Quality</strong>
+<span>Careful fabrication</span>
+</div>
+
+<div class="highlight">
+<strong>Katwe</strong>
+<span>Kampala, Uganda</span>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
 
 <section class="section" id="about">
 <div class="container about-grid">
 
 <div class="about-image">
-<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=85" alt="Metal fabrication work">
+<img
+src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85"
+alt="Metal welding and fabrication"
+loading="lazy">
 </div>
 
 <div class="about-text">
+
 <div class="label">Who We Are</div>
 
-<h2>Welcome to <span>AJ Steel & Metal Fabricators</span></h2>
+<h2>AJ Steel & <span>Metal Fabricators</span></h2>
 
 <p>
-We specialise in metal fabrication, welding, repairs and custom-made
-metal products. Our aim is to deliver strong, attractive and practical
-solutions for homes, businesses and construction projects.
+We specialise in metal fabrication, welding, repairs and
+custom-made metal products for homes, apartments, shops,
+offices and construction projects.
 </p>
 
 <p>
-Whether you need a security gate, a modern bed, a shoe rack,
-a fence or a custom metal design, talk to us about your project.
+Our catalogue features practical designs suited to Ugandan
+homes and businesses, from strong security installations
+to modern furniture and outdoor structures.
 </p>
 
 <div class="features">
 <div class="feature">✓ Custom Designs</div>
-<div class="feature">✓ Quality Workmanship</div>
+<div class="feature">✓ Metal Fabrication</div>
 <div class="feature">✓ Repairs & Installation</div>
-<div class="feature">✓ Customer Satisfaction</div>
+<div class="feature">✓ Modern Finishes</div>
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- PRODUCTS -->
 
 <section class="section products" id="products">
 <div class="container">
 
 <div class="section-heading">
-<div class="label">What We Make</div>
-<h2>Our <span>Products & Services</span></h2>
-<p>Explore our wide range of metal fabrication products.</p>
+<div class="label">Explore Our Work</div>
+<h2>Our <span>Metal Products Catalogue</span></h2>
+<p>Modern metal designs for Ugandan homes, shops and businesses.</p>
 </div>
 
-<h3 class="category-title">1. Gates, Doors & Security</h3>
-
-<div class="product-grid">
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=85" alt="Modern entrance gate">
-<div class="product-info"><h3>Modern Gates</h3><p>Beautiful custom-designed entrance gates.</p><a href="#contact">Request a Quote →</a></div>
+<div class="catalogue-tools">
+<input
+type="search"
+id="productSearch"
+placeholder="Search products...">
 </div>
 
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=85" alt="Metal security gate">
-<div class="product-info"><h3>Security Gates</h3><p>Strong security gates for homes and businesses.</p><a href="#contact">Request a Quote →</a></div>
+<div class="filters">
+<button class="filter-btn active" data-filter="all">All Products</button>
+<button class="filter-btn" data-filter="security">Gates & Security</button>
+<button class="filter-btn" data-filter="furniture">Furniture</button>
+<button class="filter-btn" data-filter="storage">Storage</button>
+<button class="filter-btn" data-filter="outdoor">Outdoor & Building</button>
+<button class="filter-btn" data-filter="industrial">Industrial</button>
 </div>
 
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=85" alt="Metal fence">
-<div class="product-info"><h3>Fences</h3><p>Metal fencing for homes, properties and businesses.</p><a href="#contact">Request a Quote →</a></div>
+<div class="product-grid" id="productGrid">
+
+<!-- SECURITY -->
+
+<article class="product-card" data-category="security" data-name="modern sliding steel gate">
+<div class="product-image">
+<img src="https://www.chuumafabricators.com/images/hero-modern-metal-gate.jpg"
+alt="Modern steel sliding gate" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Modern Steel Sliding Gate</div>
+</div>
+<div class="product-info">
+<h3>Modern Sliding Gates</h3>
+<p>Contemporary steel gates for homes, apartments and businesses.</p>
+<a href="#" class="quote-link" data-product="Modern Sliding Gates">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="security" data-name="laser cut steel gate">
+<div class="product-image">
+<img src="https://msusallc.net/wp-content/uploads/2024/04/Driveway-Sliding-Gates-Contemporary-3-02.webp"
+alt="Geometric laser cut steel gate" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Laser-Cut Steel Gate</div>
+</div>
+<div class="product-info">
+<h3>Laser-Cut Gates</h3>
+<p>Decorative geometric steel gate designs.</p>
+<a href="#" class="quote-link" data-product="Laser-Cut Gates">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="security" data-name="metal fence steel boundary fence">
+<div class="product-image">
+<img src="https://dominussteel.com/assets/fence-main-BVwsO3-2.webp"
+alt="Modern fabricated steel fence" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Boundary Fence</div>
+</div>
+<div class="product-info">
+<h3>Steel Fences</h3>
+<p>Modern boundary fencing and matching gate designs.</p>
+<a href="#" class="quote-link" data-product="Steel Fences">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="security" data-name="window burglar proof security grille">
+<div class="product-image">
+<img src="https://image.made-in-china.com/2f0j00ZDPBWQNshaoG/Stainless-Steel-Sliding-Door-Security-Grilles-Burglar-Proof-Aluminum-Alloy-Window-Design-Fixedcollapsible-Wrought-Iron-Windows.webp"
+alt="Metal security grille" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Security Window Grilles</div>
+</div>
+<div class="product-info">
+<h3>Window Grills</h3>
+<p>Fabricated security grills and decorative window protection.</p>
+<a href="#" class="quote-link" data-product="Window Grills">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="security" data-name="metal roller shutters shop shutter">
+<div class="product-image">
+<img src="https://www.ugabox.com/images/business/directory/engineering/MI-Engineering-Concepts-Ltd/Roller-Shutters-Steel-Metal-Welding-Uganda-MI-Engineering-Concepts-Ltd-03.jpg"
+alt="Steel roller shutter" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Roller Shutters</div>
+</div>
+<div class="product-info">
+<h3>Roller Shutters</h3>
+<p>Metal shop shutters and commercial security doors.</p>
+<a href="#" class="quote-link" data-product="Roller Shutters">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="security" data-name="metal security doors steel doors">
+<div class="product-image">
+<img src="https://zics.ng/web/image/product.template/1086/image_1024?unique=e1b2b32"
+alt="Decorative fabricated steel gate door" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Security Doors</div>
+</div>
+<div class="product-info">
+<h3>Metal Security Doors</h3>
+<p>Strong fabricated steel doors with custom patterns.</p>
+<a href="#" class="quote-link" data-product="Metal Security Doors">Request a Quote →</a>
+</div>
+</article>
+
+<!-- FURNITURE -->
+
+<article class="product-card" data-category="furniture" data-name="modern metal bed frame">
+<div class="product-image">
+<img src="https://olxkenya.co.ke/oc-content/uploads/6/1403.jpg"
+alt="Modern black metal bed frame" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Modern Metal Bed</div>
+</div>
+<div class="product-info">
+<h3>Modern Metal Beds</h3>
+<p>Single, double, queen and king-size fabricated bed frames.</p>
+<a href="#" class="quote-link" data-product="Modern Metal Beds">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="furniture" data-name="metal bunk bed double decker">
+<div class="product-image">
+<img src="https://image.made-in-china.com/2f0j00LOFlIzjKZQuD/Metal-Double-Deck-Steel-Frame-Metal-Bunk-Bed-with-Storage-Cabinet-2-Layers-Steel-Double-Decker-Bed-Iron-Metal-Bed.jpg"
+alt="Steel metal bunk bed" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Bunk Beds</div>
+</div>
+<div class="product-info">
+<h3>Metal Bunk Beds</h3>
+<p>Strong double-decker beds for homes, hostels and rentals.</p>
+<a href="#" class="quote-link" data-product="Metal Bunk Beds">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="furniture" data-name="metal dining table steel chairs">
+<div class="product-image">
+<img src="https://cs14.pikabu.ru/post_img/big/2022/12/04/8/167015751114894530.jpg"
+alt="Metal table and steel chairs" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Tables and Chairs</div>
+</div>
+<div class="product-info">
+<h3>Metal Tables & Chairs</h3>
+<p>Dining, outdoor, office and commercial metal furniture.</p>
+<a href="#" class="quote-link" data-product="Metal Tables and Chairs">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="furniture" data-name="metal tv stand television cabinet">
+<div class="product-image">
+<img src="https://res.litfad.com/site/img/item/2022/08/15/5706676/1200x1200.jpg"
+alt="Black industrial metal TV stand" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal TV Stand</div>
+</div>
+<div class="product-info">
+<h3>Metal TV Stands</h3>
+<p>Modern television stands and media cabinets.</p>
+<a href="#" class="quote-link" data-product="Metal TV Stands">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="furniture" data-name="metal cabinet storage cupboard">
+<div class="product-image">
+<img src="https://i5.walmartimages.com/seo/Global-Industrial-Assembled-Storage-Cabinet-36x18x78-Black_231bd26d-3692-4f26-9cf1-5f02d5f1aeda.c59488994b38fbd69fbc2370f115835e.jpeg"
+alt="Black steel storage cabinet" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Storage Cabinets</div>
+</div>
+<div class="product-info">
+<h3>Metal Cabinets</h3>
+<p>Storage cupboards and lockable steel cabinets.</p>
+<a href="#" class="quote-link" data-product="Metal Cabinets">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="furniture" data-name="metal workbench desk table frame">
+<div class="product-image">
+<img src="https://www.protablesdirect.com/cdn/shop/products/IMG_0310_f2d633a7-49f7-4ddf-aef5-74dd13c7623f_grande.jpg?v=1643027131"
+alt="Steel table frame" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Table Frames</div>
+</div>
+<div class="product-info">
+<h3>Workbenches & Desks</h3>
+<p>Strong metal work tables, desks and workstations.</p>
+<a href="#" class="quote-link" data-product="Workbenches and Desks">Request a Quote →</a>
+</div>
+</article>
+
+<!-- STORAGE -->
+
+<article class="product-card" data-category="storage" data-name="metal shoe rack shoe stand">
+<div class="product-image">
+<img src="https://down-th.img.susercontent.com/file/th-11134207-81ztj-mk3ozi20qih440"
+alt="Black metal shoe rack" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Shoe Racks</div>
+</div>
+<div class="product-info">
+<h3>Metal Shoe Racks</h3>
+<p>Modern multi-level shoe racks for homes and apartments.</p>
+<a href="#" class="quote-link" data-product="Metal Shoe Racks">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="storage" data-name="metal shelves steel storage racks">
+<div class="product-image">
+<img src="https://cpimg.tistatic.com/9914032/b/5/steel-fabrication-work-services.jpg"
+alt="Metal shelving and fabricated racks" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Shelves and Racks</div>
+</div>
+<div class="product-info">
+<h3>Metal Shelves & Racks</h3>
+<p>Home, shop, office and warehouse storage systems.</p>
+<a href="#" class="quote-link" data-product="Metal Shelves and Racks">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="storage" data-name="steel shoe storage cabinet">
+<div class="product-image">
+<img src="https://down-my.img.susercontent.com/file/cn-11134207-7ras8-mcro8qb8mw3k00"
+alt="Steel shoe storage cabinet" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Storage Cabinets</div>
+</div>
+<div class="product-info">
+<h3>Shoe Storage Cabinets</h3>
+<p>Modern enclosed metal shoe storage solutions.</p>
+<a href="#" class="quote-link" data-product="Shoe Storage Cabinets">Request a Quote →</a>
+</div>
+</article>
+
+<!-- OUTDOOR AND BUILDING -->
+
+<article class="product-card" data-category="outdoor" data-name="steel staircase metal stairs">
+<div class="product-image">
+<img src="https://bullinger-metallbau.de/images/projekte/eingangselemente/eingangstreppe-stahl-vordach-gelaender-anthrazit.webp"
+alt="Modern steel staircase and railing" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Staircases</div>
+</div>
+<div class="product-info">
+<h3>Steel Staircases</h3>
+<p>Modern straight, external and custom metal staircases.</p>
+<a href="#" class="quote-link" data-product="Steel Staircases">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="outdoor" data-name="steel balcony railing metal grill">
+<div class="product-image">
+<img src="https://rustymood.ro/_next/image?q=75&url=https%3A%2F%2Frustymood.ro%2Fapi%2Fstorage%2Fimages%2Fgallery%2Fgallery-1707069315884.jpg&w=1080"
+alt="Modern black metal balcony railing" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Balcony Railings</div>
+</div>
+<div class="product-info">
+<h3>Balcony Railings</h3>
+<p>Modern steel balcony grills and protective railings.</p>
+<a href="#" class="quote-link" data-product="Balcony Railings">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="outdoor" data-name="steel pergola outdoor metal structure">
+<div class="product-image">
+<img src="https://www.integraluminio.com/assets/img/proyectos/pergola/pergolas-5.png"
+alt="Modern steel pergola" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Pergolas</div>
+</div>
+<div class="product-info">
+<h3>Steel Pergolas</h3>
+<p>Modern outdoor shade structures and garden pergolas.</p>
+<a href="#" class="quote-link" data-product="Steel Pergolas">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="outdoor" data-name="metal canopy carport">
+<div class="product-image">
+<img src="https://tukangcikarang.com/uploads/layanan/kanopi_besi_hollow.png"
+alt="Steel carport canopy" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Metal Canopies</div>
+</div>
+<div class="product-info">
+<h3>Metal Canopies</h3>
+<p>Steel canopies for entrances, shops and compounds.</p>
+<a href="#" class="quote-link" data-product="Metal Canopies">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="outdoor" data-name="steel carport parking shade structure">
+<div class="product-image">
+<img src="https://smv-usluge.hr/assets/steel_carport_frame.webp"
+alt="Modern steel carport structure" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Carports</div>
+</div>
+<div class="product-info">
+<h3>Steel Carports</h3>
+<p>Metal parking shelters and vehicle shade structures.</p>
+<a href="#" class="quote-link" data-product="Steel Carports">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="outdoor" data-name="steel handrails outdoor stair railing">
+<div class="product-image">
+<img src="https://kovinarstvocuk.si/assets/img/stopnice.png"
+alt="Fabricated metal outdoor staircase" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Handrails</div>
+</div>
+<div class="product-info">
+<h3>Steel Handrails</h3>
+<p>Metal handrails for stairs, verandas and walkways.</p>
+<a href="#" class="quote-link" data-product="Steel Handrails">Request a Quote →</a>
+</div>
+</article>
+
+<!-- INDUSTRIAL -->
+
+<article class="product-card" data-category="industrial" data-name="industrial steel tables fabrication">
+<div class="product-image">
+<img src="https://www.medsfab.com/assets/image/product/steel-furniture.webp"
+alt="Stainless steel furniture and work tables" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Industrial Steel Furniture</div>
+</div>
+<div class="product-info">
+<h3>Industrial Steel Furniture</h3>
+<p>Commercial metal tables, benches and equipment furniture.</p>
+<a href="#" class="quote-link" data-product="Industrial Steel Furniture">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="industrial" data-name="steel industrial storage cabinet">
+<div class="product-image">
+<img src="https://i5.walmartimages.com/seo/Global-Industrial-Assembled-Storage-Cabinet-36x18x78-Black_231bd26d-3692-4f26-9cf1-5f02d5f1aeda.c59488994b38fbd69fbc2370f115835e.jpeg"
+alt="Industrial steel storage cabinet" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Industrial Cabinets</div>
+</div>
+<div class="product-info">
+<h3>Industrial Cabinets</h3>
+<p>Metal tool cupboards and secure workshop storage.</p>
+<a href="#" class="quote-link" data-product="Industrial Cabinets">Request a Quote →</a>
+</div>
+</article>
+
+<article class="product-card" data-category="industrial" data-name="steel fabrication table frame">
+<div class="product-image">
+<img src="https://www.protablesdirect.com/cdn/shop/products/IMG_0310_f2d633a7-49f7-4ddf-aef5-74dd13c7623f_grande.jpg?v=1643027131"
+alt="Heavy duty steel work table frame" loading="lazy"
+onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+<div class="image-fallback">Steel Work Tables</div>
+</div>
+<div class="product-info">
+<h3>Steel Work Tables</h3>
+<p>Heavy-duty fabricated work surfaces and workshop frames.</p>
+<a href="#" class="quote-link" data-product="Steel Work Tables">Request a Quote →</a>
+</div>
+</article>
+
 </div>
 
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=85" alt="Modern windows">
-<div class="product-info"><h3>Windows & Grills</h3><p>Window frames, burglar-proof grills and security designs.</p><a href="#contact">Request a Quote →</a></div>
+<!-- EXTRA FABRICATION OPTIONS -->
+
+<div class="extra-products">
+<h3>More Custom Metal Fabrication Options</h3>
+
+<div class="extra-list">
+<span>Gatic Doors</span>
+<span>Steel Frames</span>
+<span>Roofing Structures</span>
+<span>Metal Partitions</span>
+<span>Building Jacks</span>
+<span>Scaffolding</span>
+<span>Water Tank Stands</span>
+<span>Generator Stands</span>
+<span>Metal Trailers</span>
+<span>Wheelbarrows</span>
+<span>Metal Trolleys</span>
+<span>Dustbins</span>
+<span>Garden Benches</span>
+<span>Flower Stands</span>
+<span>Metal Planters</span>
+<span>Shop Counters</span>
+<span>Display Stands</span>
+<span>Warehouse Racking</span>
+<span>Filing Cabinets</span>
+<span>Steel Lockers</span>
+<span>Metal Toolboxes</span>
+<span>Metal Frames</span>
+<span>Custom Metal Decorations</span>
+<span>General Welding</span>
+<span>Repairs & Maintenance</span>
+<span>Installation</span>
 </div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" alt="Metal interior door">
-<div class="product-info"><h3>Metal Doors</h3><p>Strong metal doors for different applications.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=700&q=85" alt="Modern building entrance">
-<div class="product-info"><h3>Roller Shutters & Gatic Doors</h3><p>Shop shutters and specialised metal doors.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-</div>
-
-<h3 class="category-title">2. Beds & Bedroom Products</h3>
-
-<div class="product-grid">
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=85" alt="Modern bed">
-<div class="product-info"><h3>Metal Beds</h3><p>Strong and stylish metal beds in different designs.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=700&q=85" alt="Bedroom furniture">
-<div class="product-info"><h3>Custom Bed Frames</h3><p>Custom-made frames to suit your bedroom.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=85" alt="Bedroom furniture">
-<div class="product-info"><h3>Bedroom Furniture</h3><p>Metal furniture and custom bedroom fittings.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-</div>
-
-<h3 class="category-title">3. Shoe Racks, Shelves & Storage</h3>
-
-<div class="product-grid">
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=700&q=85" alt="Shoe storage">
-<div class="product-info"><h3>Shoe Racks</h3><p>Practical shoe racks for homes and offices.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=700&q=85" alt="Storage shelving">
-<div class="product-info"><h3>Metal Shelves</h3><p>Storage shelves for homes, shops and offices.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=700&q=85" alt="Storage furniture">
-<div class="product-info"><h3>Storage Racks</h3><p>Organised storage solutions made from metal.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=85" alt="Furniture">
-<div class="product-info"><h3>Metal Cabinets</h3><p>Custom metal storage cabinets and cupboards.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-</div>
-
-<h3 class="category-title">4. Tables, Chairs & Metal Furniture</h3>
-
-<div class="product-grid">
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=700&q=85" alt="Office desk">
-<div class="product-info"><h3>Tables & Desks</h3><p>Metal tables, work desks and custom frames.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=85" alt="Chair">
-<div class="product-info"><h3>Metal Chairs</h3><p>Strong chairs for homes, offices and businesses.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=85" alt="Modern furniture">
-<div class="product-info"><h3>Custom Furniture</h3><p>Unique metal furniture made to your specifications.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=85" alt="Living room furniture">
-<div class="product-info"><h3>TV Stands & Frames</h3><p>Metal TV stands and decorative furniture frames.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-</div>
-
-<h3 class="category-title">5. Outdoor & Building Metal Works</h3>
-
-<div class="product-grid">
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=85" alt="Outdoor canopy">
-<div class="product-info"><h3>Canopies</h3><p>Metal canopies for homes, shops and buildings.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" alt="Outdoor pergola">
-<div class="product-info"><h3>Pargolas</h3><p>Outdoor metal structures and shade designs.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=85" alt="Balcony railing">
-<div class="product-info"><h3>Balcony Railings</h3><p>Decorative and protective balcony railings.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=85" alt="Staircase">
-<div class="product-info"><h3>Metal Staircases</h3><p>Custom metal staircases and handrails.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=700&q=85" alt="Building metal work">
-<div class="product-info"><h3>Metal Frames</h3><p>Structural frames and custom metal fabrication.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=85" alt="Metal construction">
-<div class="product-info"><h3>Custom Building Works</h3><p>Metal solutions for construction projects.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-</div>
-
-<h3 class="category-title">6. Welding & Other Services</h3>
-
-<div class="product-grid">
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=85" alt="Welding work">
-<div class="product-info"><h3>General Welding</h3><p>Professional welding for different metal projects.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=700&q=85" alt="Metal fabrication">
-<div class="product-info"><h3>Custom Fabrication</h3><p>Bring your idea and let us help make it real.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=700&q=85" alt="Metal repair">
-<div class="product-info"><h3>Repairs & Maintenance</h3><p>Repair and maintenance of metal products.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=700&q=85" alt="Metal installation">
-<div class="product-info"><h3>Installation</h3><p>Installation of gates, grills, doors and other metal works.</p><a href="#contact">Request a Quote →</a></div>
-</div>
-
 </div>
 
 </div>
 </section>
 
-<section class="section" id="gallery">
+<!-- GALLERY -->
+
+<section class="section gallery-section" id="gallery">
 <div class="container">
 
 <div class="section-heading">
-<div class="label">Our Inspiration</div>
-<h2>Project <span>Gallery</span></h2>
-<p>Explore examples of metal designs and fabrication ideas.</p>
+<div class="label">Design Inspiration</div>
+<h2>Metal Work <span>Gallery</span></h2>
+<p>Modern metal fabrication ideas and product references.</p>
 </div>
 
 <div class="gallery">
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=85" alt="Welding reference">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=85" alt="Gate reference">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=85" alt="Bed reference">
-<img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=700&q=85" alt="Shoe storage reference">
-<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=85" alt="Building reference">
-<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=700&q=85" alt="Fabrication reference">
+
+<div class="gallery-item">
+<img src="https://www.chuumafabricators.com/images/hero-modern-metal-gate.jpg"
+alt="Ugandan style steel sliding gate" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://olxkenya.co.ke/oc-content/uploads/6/1403.jpg"
+alt="Metal bed frame" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://down-th.img.susercontent.com/file/th-11134207-81ztj-mk3ozi20qih440"
+alt="Metal shoe rack" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://bullinger-metallbau.de/images/projekte/eingangselemente/eingangstreppe-stahl-vordach-gelaender-anthrazit.webp"
+alt="Steel staircase" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://www.integraluminio.com/assets/img/proyectos/pergola/pergolas-5.png"
+alt="Steel pergola" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://dominussteel.com/assets/fence-main-BVwsO3-2.webp"
+alt="Modern steel fence" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://res.litfad.com/site/img/item/2022/08/15/5706676/1200x1200.jpg"
+alt="Metal TV stand" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://rustymood.ro/_next/image?q=75&url=https%3A%2F%2Frustymood.ro%2Fapi%2Fstorage%2Fimages%2Fgallery%2Fgallery-1707069315884.jpg&w=1080"
+alt="Metal balcony railing" loading="lazy">
+</div>
+
+<div class="gallery-item">
+<img src="https://tukangcikarang.com/uploads/layanan/kanopi_besi_hollow.png"
+alt="Steel canopy" loading="lazy">
+</div>
+
 </div>
 
 <p class="note">
-Illustrative reference images, not verified AJ Steel completed projects.
+These are illustrative product reference photographs, not verified AJ Steel completed projects.
 </p>
 
 </div>
 </section>
 
+<!-- WHY CHOOSE US -->
+
 <section class="section why">
 <div class="container">
 
 <div class="section-heading">
-<div class="label">Why Choose Us</div>
-<h2>Built on <span>Quality</span></h2>
-<p>We aim to make every project strong, attractive and reliable.</p>
+<div class="label">Why Choose AJ Steel</div>
+<h2>Strength Meets <span>Modern Design</span></h2>
+<p>Practical fabrication ideas for homes, businesses and construction.</p>
 </div>
 
 <div class="why-grid">
 
 <div class="why-card">
 <div class="icon">⚒️</div>
-<h3>Skilled Work</h3>
-<p>Careful metal fabrication and welding.</p>
+<h3>Metal Craftsmanship</h3>
+<p>Careful welding and fabrication.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">📐</div>
+<h3>Custom Designs</h3>
+<p>Made according to your measurements.</p>
 </div>
 
 <div class="why-card">
 <div class="icon">🏗️</div>
-<h3>Custom Designs</h3>
-<p>Products made to match your requirements.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">🛠️</div>
-<h3>Reliable Service</h3>
-<p>Repairs, maintenance and installation.</p>
+<h3>Many Products</h3>
+<p>From household furniture to building structures.</p>
 </div>
 
 <div class="why-card">
 <div class="icon">🤝</div>
 <h3>Customer Care</h3>
-<p>We listen to your needs and project ideas.</p>
+<p>We listen to your project requirements.</p>
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- CONTACT -->
 
 <section class="section contact" id="contact">
 <div class="container">
@@ -831,12 +1314,13 @@ Illustrative reference images, not verified AJ Steel completed projects.
 <div class="section-heading">
 <div class="label">Get In Touch</div>
 <h2>Let's Build <span>Your Idea</span></h2>
-<p>Contact us for quotations, orders and custom metal work.</p>
+<p>Contact AJ Steel for quotations, orders and custom metal work.</p>
 </div>
 
 <div class="contact-grid">
 
 <div class="contact-info">
+
 <h3>Contact AJ Steel</h3>
 
 <div class="contact-item">
@@ -851,12 +1335,12 @@ Katwe, Kampala, Uganda
 
 <div class="contact-item">
 <strong>💬 WhatsApp</strong>
-<a href="https://wa.me/256705434720">Chat with us on WhatsApp</a>
+<a href="https://wa.me/256705434720">Chat with AJ Steel</a>
 </div>
 
 <div class="contact-item">
-<strong>⚒️ Services</strong>
-Gates, beds, shoe racks, fences, welding, fabrication and more.
+<strong>⚒️ Our Work</strong>
+Gates, beds, shoe racks, fences, staircases, pergolas, canopies, furniture and custom fabrication.
 </div>
 
 <a class="btn btn-gold" href="https://wa.me/256705434720">
@@ -866,37 +1350,44 @@ Chat on WhatsApp
 </div>
 
 <form id="quoteForm">
+
 <h3>Request a Quotation</h3>
 
-<input type="text" id="name" placeholder="Your full name" required>
+<input id="name" type="text" placeholder="Your full name" required>
 
-<input type="tel" id="phone" placeholder="Your phone number" required>
+<input id="phone" type="tel" placeholder="Your phone number" required>
 
 <select id="project" required>
-<option value="">Select a product or service</option>
-<option>Gates</option>
-<option>Fences</option>
-<option>Windows and Grills</option>
-<option>Metal Doors</option>
+<option value="">Choose a product</option>
+<option>Modern Gates</option>
+<option>Steel Fences</option>
+<option>Security Doors</option>
+<option>Window Grills</option>
+<option>Roller Shutters</option>
 <option>Metal Beds</option>
+<option>Metal Bunk Beds</option>
 <option>Shoe Racks</option>
 <option>Metal Shelves</option>
 <option>Metal Cabinets</option>
-<option>Tables and Chairs</option>
 <option>TV Stands</option>
-<option>Canopies</option>
-<option>Pargolas</option>
+<option>Tables and Chairs</option>
+<option>Workbenches</option>
+<option>Steel Staircases</option>
 <option>Balcony Railings</option>
-<option>Roller Shutters</option>
+<option>Steel Pergolas</option>
+<option>Canopies</option>
+<option>Carports</option>
 <option>Gatic Doors</option>
-<option>Metal Staircases</option>
-<option>General Welding</option>
+<option>Water Tank Stands</option>
+<option>Generator Stands</option>
+<option>Trailers and Trolleys</option>
+<option>Other Custom Fabrication</option>
 <option>Repairs and Maintenance</option>
-<option>Custom Fabrication</option>
-<option>Other</option>
 </select>
 
-<textarea id="details" placeholder="Describe what you need, including measurements or design details..." required></textarea>
+<textarea id="details"
+placeholder="Describe your project, measurements, preferred design and location..."
+required></textarea>
 
 <button type="submit" class="btn btn-gold">
 Send Quotation Request
@@ -921,17 +1412,79 @@ WhatsApp
 </a>
 
 <script>
-function toggleMenu(){
+function toggleMenu() {
   document.getElementById("navigation").classList.toggle("active");
 }
 
-function closeMenu(){
+function closeMenu() {
   document.getElementById("navigation").classList.remove("active");
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-document.getElementById("quoteForm").addEventListener("submit",function(e){
+/* PRODUCT SEARCH AND FILTER */
+
+let currentFilter = "all";
+
+const searchInput = document.getElementById("productSearch");
+const cards = document.querySelectorAll(".product-card");
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+function filterProducts() {
+  const search = searchInput.value.toLowerCase();
+
+  cards.forEach(card => {
+    const category = card.dataset.category;
+    const name = card.dataset.name.toLowerCase();
+    const text = card.innerText.toLowerCase();
+
+    const matchesCategory =
+      currentFilter === "all" || category === currentFilter;
+
+    const matchesSearch =
+      name.includes(search) || text.includes(search);
+
+    card.style.display =
+      matchesCategory && matchesSearch ? "" : "none";
+  });
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+    currentFilter = button.dataset.filter;
+
+    filterProducts();
+  });
+});
+
+searchInput.addEventListener("input", filterProducts);
+
+/* PRODUCT QUOTATION BUTTONS */
+
+document.querySelectorAll(".quote-link").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const product = this.dataset.product;
+
+    const message =
+      "Hello AJ Steel & Metal Fabricators. I am interested in: " +
+      product +
+      ". Please send me more information and a quotation.";
+
+    window.open(
+      "https://wa.me/256705434720?text=" + encodeURIComponent(message),
+      "_blank"
+    );
+  });
+});
+
+/* QUOTATION FORM */
+
+document.getElementById("quoteForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
   const name = document.getElementById("name").value.trim();
@@ -941,13 +1494,16 @@ document.getElementById("quoteForm").addEventListener("submit",function(e){
 
   const message =
     "Hello AJ Steel & Metal Fabricators.%0A%0A" +
-    "I would like to request a quotation.%0A%0A" +
+    "I would like a quotation.%0A%0A" +
     "Name: " + encodeURIComponent(name) + "%0A" +
     "Phone: " + encodeURIComponent(phone) + "%0A" +
-    "Project: " + encodeURIComponent(project) + "%0A" +
+    "Product: " + encodeURIComponent(project) + "%0A" +
     "Details: " + encodeURIComponent(details);
 
-  window.open("https://wa.me/256705434720?text=" + message,"_blank");
+  window.open(
+    "https://wa.me/256705434720?text=" + message,
+    "_blank"
+  );
 });
 </script>
 
